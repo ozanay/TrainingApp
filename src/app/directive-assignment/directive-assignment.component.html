@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="col-md-12">
+        <button class="btn btn-primary btn-block" (click)="onDetailsToogled()">Display Details</button>
+        <hr>
+        <p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{startAt5: logs.length >= 5}" *ngFor="let log of logs">{{log}}</p>
+    </div>
+</div>
